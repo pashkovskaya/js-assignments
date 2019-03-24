@@ -31,7 +31,7 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-   throw new Error('Not implemented');
+   return new RegExp("\{[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}\}");
 }
 
 
@@ -73,6 +73,8 @@ function getRegexForPitSpot() {
  */
 function getRegexForIPv4() {
    throw new Error('Not implemented');
+   var byte = '((\b[0-1]?[0-9]?[0-9]\b)|(\b2[0-5]{2}\b))';
+   return new RegExp(`${byte}\.${byte}\.${byte}\.${byte}`);
 }
 
 
