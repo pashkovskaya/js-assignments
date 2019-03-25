@@ -227,7 +227,7 @@ function encodeToRot13(str) {
     var alphUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var alphLower = 'abcdefghijklmnopqrstuvwxyz';
     var result = '';
-    for (var i = 0; i < str.length; i++)
+    for (let i = 0; i < str.length; i++)
     {
         if(alphUpper.indexOf(str[i]) != -1 || alphLower.indexOf(str[i]) != -1)
         {

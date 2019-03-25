@@ -75,7 +75,7 @@ function getFactorial(n) {
  */
 function getSumBetweenNumbers(n1, n2) {
     var sum = 0;
-    for(var i = n1; i <= n2; i++){
+    for(let i = n1; i <= n2; i++){
         sum += i;
     }
     return sum;
@@ -185,9 +185,9 @@ function isInsideCircle(circle, point) {
  */
 function findFirstSingleChar(str) {
     var count = 0;
-    for(var i = 0; i < str.length; i++){
+    for(let i = 0; i < str.length; i++){
         count = 0;
-        for(var j = 0; j < str.length; j++){
+        for(let j = 0; j < str.length; j++){
             if(str[j] == str[i]){
                 ++count;
             }
@@ -244,7 +244,7 @@ function getIntervalString(a, b, isStartIncluded, isEndIncluded) {
  */
 function reverseString(str) {
    var result = '';
-   for(var i = str.length - 1; i >= 0; i--){
+   for(let i = str.length - 1; i >= 0; i--){
        result += str[i];
    }
    return result;
@@ -309,7 +309,7 @@ function isCreditCardNumber(ccn) {
  */
 function getDigitalRoot(num) {
     while(num > 9){
-        var sum = 0;
+        let sum = 0;
         while(num > 0){
             sum += num % 10;
             num = Math.trunc(num / 10);

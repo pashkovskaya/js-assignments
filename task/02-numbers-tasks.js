@@ -203,7 +203,7 @@ function roundToPowerOfTen(num, pow) {
  */
 function isPrime(n) {
     var prime = true;
-    for (var i = 2; i <= Math.sqrt(n); i++)
+    for (let i = 2; i <= Math.sqrt(n); i++)
     {
         if(n % i == 0)
         {
